@@ -25,7 +25,7 @@ int	error_syntax(char *str_n)
 		if (!ft_isdigit(*str_n))
 			return (1);
 	}
-	return (0);	
+	return (0);
 }
 
 int	error_duplicate(t_stack *stack)

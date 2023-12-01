@@ -91,7 +91,8 @@ t_stack_node	*get_cheapest(t_stack_node *stack)
 	return (NULL);
 }
 
-void	prep_for_pus(t_stack_node **stack, t_stack_node *top_node, char stack_name)
+void	prep_for_pus(t_stack_node **stack,
+						t_stack_node *top_node, char stack_name)
 {
 	while (*stack != top_node)
 	{

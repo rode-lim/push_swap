@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rode-lim <rode-lim@student.42lisboa.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/01 11:00:18 by rode-lim          #+#    #+#             */
+/*   Updated: 2023/12/01 11:00:42 by rode-lim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static void	push(t_stack_node **dst, t_stack_node **src)
 {
 	t_stack_node	*push_node;
 
-	if(!*src)
+	if (!*src)
 		return ;
 	push_node = *src;
 	*src = (*src)->next;
