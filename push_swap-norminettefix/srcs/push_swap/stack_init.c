@@ -67,7 +67,10 @@ void	init_stack_a(t_stack_node **a, char **argv)
 	while (argv[i])
 	{
 		if (error_syntax(argv[i]))
+		{
+			free(argv);
 			free_errors(a);
+		}
 		n = ft_atol(argv[i]);
 		if (n > INT_MAX || n < INT_MIN)
 			free_errors(a);
